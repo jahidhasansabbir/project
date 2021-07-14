@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+}
+/*------------------------------------
+          header style 
+    --------------------------------------*/
+.header-section{
+    background-color: rgb(8, 8, 156);
+    height: 510px; 
+    display:flex;
+    padding-left: 156px;
+    padding-right: 140px;
+    align-items: center;
+
+}
+.header-title h1{
+    font-size: 54px;
+    color: #FFFFFF;
+}
+.watch-live-button{
+    background-color: #E02C6D;
+    width: 168px;
+    height: 44px;
+    border-radius: 10px;
+}
+.watch-live-button:hover{
+    background-color: brown;
+}
+.watch-live-button span{
+    font-size: 18px;
+}
+.watch-live-button a{
+    font-size: 16px;
+    position: absolute;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-left: 35px;
+    margin-top: 6px;
+}
+.header-banner img{
+    width: 556px;
+    height: 438px;
+}
+.header-section:hover .header-banner{
+    transform: scale(1.1);
+    transition: transform 1s ease-in;
+}
+/*--------------------------------------
+       main section style
+    ----------------------------------------*/
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+/*---------------------------------------
+         player section style 
+    ----------------------------------------*/
+.container{
+    padding-top:70px;
+}    
+.player-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+.players{
+    background-color: white;
+    width: 330px;
+    height: 474px;
+    box-shadow: 0px 0px 40px rgba(128, 128, 128, 0.438);
+    overflow: hidden;
+    border-radius: 5px;
+}
+.player{
+    padding: 15px;
+
+}
+.player img{
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+}
+.player h2{
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 16px;
+}
+.player p{
+    font-size: 16px;
+    color: #6C6C6C;
+    font-weight: 400;
+    margin-top: 10px;
+}
+/*-----------------------------------------
+        turnament style here
+    -------------------------------------------*/
+#turnament-heading{
+    font-size: 54px;
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+
+.turnaments{
+    background-color: white;
+    box-shadow: 0px 0px 2px rgba(128, 128, 128, 0.438);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.turnament{
+    box-shadow: 0px 0px 40px rgba(128, 128, 128, 0.513);
+    width:330px;
+    height:470px;
+    border-radius: 10px;
+    margin:15px
+}
+.turnament-info{
+    padding: 15px
+}
+
+.turnament-info img{
+    width: 300px;
+    height: 256px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.turnament-info .watch-live-button{
+    margin-left: 73px;
+}
+.turnament-title h1{
+    font-size: 34px;
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+/*--------------------------------------
+         footer style here 
+    ---------------------------------------*/
+.footer-style{
+    text-align: center;
+}
+.footer-style img{
+    width:483px;
+    height: 110px;
+}
+.social-media a{
+    color: #0B0D17;
+}
+.fab{
+    padding-left: 14px;
+    width: 32px;
+    height: 32px;
+}
+
+
+/*--------------------------------
+        media queries 
+    ---------------------------------*/
+
+
+/*-------------------------------
+              Mobile 
+    ---------------------------------*/
+
+@media only screen and (max-width:688px){
+    body{
+        margin: 0%;
+        width: 100%;
+    }
+    .header-section{
+        width: 60%;
+        flex-direction: column;
+        height: 650px;
+    }
+    header .header-title h1{
+        font-size: 44px;
+    }
+    header .header-banner img{
+        width: 329px;
+        height: 259.17px;
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+
+    .watch-live-button a{
+        width:50%;
+        position: absolute;   
+        margin-left: 35px;
+        margin-top: 6px;
+    }
+
+    .player-list, .turnaments{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 98px;
+    }
+    footer{
+        width: 100%;
+        margin-left: 44px;
+
+    }
+    .footer-style img{
+        width: 100%;
+    }
+
+}
+
+/*-------------------------------
+            Ipad 
+ ------------------------------------*/
+@media only screen and (min-width:688px) and (max-width:992px){
+    .header-section{
+        width: 100%;
+        height: 650px;
+    }
+    .watch-live-button a{
+        width:50%;
+        position: absolute;
+        margin-top: 6px;
+    }
+
+    .player-list, .turnaments{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 198px;
+    }
+    footer{
+        width: 100%;
+        margin-left: 44px;
+
+    }
+}
